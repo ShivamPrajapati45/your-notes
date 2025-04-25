@@ -1,6 +1,6 @@
 import './App.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
-import { Home, Navbar, Viewnotes, Notes } from "./components/index.js"
+import { Home, Navbar, ViewNotes, Notes } from "./components/index.js"
 
 
 const router = createBrowserRouter([
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
     path: "/notes/:id",
     element : <div>
       <Navbar/>
-      <Viewnotes/>
+      <ViewNotes/>
     </div>
   }
 ])

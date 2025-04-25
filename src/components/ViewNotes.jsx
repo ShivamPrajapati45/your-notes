@@ -2,7 +2,7 @@ import toast from "react-hot-toast";
 import { useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 
-const Viewnotes = () => {
+const ViewNotes = () => {
   const { id } = useParams();
   const allNotes = useSelector((state) => state.notes.notes);
   const note = allNotes.filter((e) => e._id === id)[0];
@@ -49,4 +49,4 @@ const Viewnotes = () => {
   );
 };
 
-export default Viewnotes;
+export default ViewNotes;
